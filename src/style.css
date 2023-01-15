@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media only screen and (min-width: 1024px){
+.hero-section{
+    width :100%;
+    position : sticky;
+    background: #fff;
+    z-index: 5;
+}
+}
+
+.end-line,  .start-line{
+    width: calc(10% - 21px);
+}
+
+.avatar-section .company-logo{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+}
+
+.img {
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+    background-position: 50%!important;
+}
+
+
+@media screen and (min-width: 768px)
+{
+.channel-banner .first{
+    animation: bannermove 20s linear infinite;
+  }
+}
+  @keyframes bannermove {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: -1775px;
+    }
+  }
+
+
